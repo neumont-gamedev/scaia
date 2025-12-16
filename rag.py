@@ -21,7 +21,9 @@ def load_qa_chain():
 
     prompt = ChatPromptTemplate.from_messages([
         ("system", system_prompt),
-        ("human", "Context:\n{context}\n\nQuestion:\n{question}")
+        ("human",
+        "Context:\n{context}\n\n"
+        "Question:\n{question}")
     ])
 
     llm = Ollama(
