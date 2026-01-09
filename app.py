@@ -4,7 +4,8 @@ warnings.filterwarnings("ignore")
 import os
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores import Chroma
-from langchain.llms import Ollama
+#from langchain.llms import Ollama
+from langchain_community.llms import Ollama
 from langchain.chains import RetrievalQA
 from langchain.prompts import ChatPromptTemplate
 
@@ -41,6 +42,7 @@ def main():
 
     llm = Ollama(
         model="llama3.1",
+        base_url=os.getenv("OLLAMA_HOST", "http://localhost:11434"),
         temperature=0
     )
 

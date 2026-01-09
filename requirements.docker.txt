@@ -1,0 +1,14 @@
+streamlit==1.32.2
+
+langchain==0.1.16
+langchain-community==0.0.34
+langchain-core==0.1.53
+langchain-text-splitters==0.0.2
+
+chromadb==0.4.24
+sentence-transformers==2.7.0
+
+pypdf==4.2.0
+python-dotenv==1.0.1
+
+ollama==0.1.9
